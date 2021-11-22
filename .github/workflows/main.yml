@@ -1,7 +1,7 @@
 name: Run Azure Login with OpenID Connect
-on:
+on: [pull_request]
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  # workflow_dispatch:
 
 permissions:
       id-token: write
