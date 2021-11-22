@@ -13,6 +13,7 @@ jobs:
       - name: 'Az CLI login'
         uses: Azure/login@v1
         with:
+          azcliversion: 2.30.0
           # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
           # creds: # optional
           # ClientId of the Azure Service principal created.
@@ -22,7 +23,7 @@ jobs:
           # Azure subscriptionId
           subscription-id: "e5b88ba1-6e66-4465-9fe2-2d59087de303" # optional
           # Set this value to true to enable Azure PowerShell Login in addition to Az CLI login
-          #enable-AzPSSession: # optional
+          enable-AzPSSession: false # optional
           # Provide audience field for access-token. Default value is api://AzureADTokenExchange
           audience: "api://AzureADTokenExchange"
   
