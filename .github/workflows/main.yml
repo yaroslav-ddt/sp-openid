@@ -13,7 +13,6 @@ jobs:
       - name: 'Az CLI login'
         uses: Azure/login@v1
         with:
-          azcliversion: 2.30.0
           # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
           # creds: # optional
           # ClientId of the Azure Service principal created.
