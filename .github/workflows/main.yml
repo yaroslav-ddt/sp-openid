@@ -19,7 +19,7 @@ jobs:
           # TenantId of the Azure Service principal created.
           tenant-id: '703922c4-f042-4683-9e67-a969c8abc975' # optional
           # Azure subscriptionId
-          subscription-id: 'e5b88ba1-6e66-4465-9fe2-2d59087de303' # optional
+          subscription-id: ${{ secret.AZURE_SUBSCRIPTIONID }} #'e5b88ba1-6e66-4465-9fe2-2d59087de303' # optional
           # Set this value to true to enable Azure PowerShell Login in addition to Az CLI login
           # enable-AzPSSession: true # optional
           # Provide audience field for access-token. Default value is api://AzureADTokenExchange
