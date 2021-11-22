@@ -14,7 +14,6 @@ jobs:
         uses: Azure/login@v1
         with:
           # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
-          # creds: # optional
           # ClientId of the Azure Service principal created.
           client-id: 6c1ea71a-74d6-43a4-8e8c-03250717cb16 # optional
           # TenantId of the Azure Service principal created.
