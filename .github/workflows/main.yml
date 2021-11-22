@@ -17,7 +17,7 @@ jobs:
           # ClientId of the Azure Service principal created.
           client-id: '6c1ea71a-74d6-43a4-8e8c-03250717cb16' # optional
           # TenantId of the Azure Service principal created.
-          tenant-id: ${{ secrets.AZURE_TENANTID }}# '703922c4-f042-4683-9e67-a969c8abc975' # optional
+          tenant-id: ${{ secrets.AZURE_TENANTID }} #'703922c4-f042-4683-9e67-a969c8abc975' # optional
           # Azure subscriptionId
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTIONID }} #'e5b88ba1-6e66-4465-9fe2-2d59087de303' # optional
           # Set this value to true to enable Azure PowerShell Login in addition to Az CLI login
